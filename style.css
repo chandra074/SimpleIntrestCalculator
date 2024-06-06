@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    background-color: #456;
+    margin: 0 0 30px 0;
+    color: white;
+    font-size: 42px;
+    padding: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #1d90bc;
+    padding: 16px 6px;
+    align-items: center;
+    box-shadow: 0 0 6px red;
+}
+input,button{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+   
+}
+#btn{
+    width: 94%;
+    height: 48px;
+    border: none;
+    background-color: #f772f2;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#btn:hover{
+    background-color: #EDFF33;
+    color: rgb(36, 34, 34);
+}
+#resultDiv{
+    width: 90%;
+    height: 0px;
+    transition: all 0.7s ease-in;
+}
+#resultDiv.show{
+    height: 250px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+#resultDiv.show h2{
+    opacity: 1;
+}
+h2 span{
+    flex: 0.7;
+    font-size: 18px;
+    text-align: right;
+}
+h2 span:nth-child(even){
+    flex: 0.7;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 12px;
+    color: #FFAB33;
+}
